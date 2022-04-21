@@ -24,6 +24,7 @@ facc
 |-------|-----|
 |`facc completion`|Generate the autocompletion script for the specified shell|
 |`facc help`|Help about any command|
+|`facc version`|Print the version number of Hugo|
 # ... completion
 `facc completion`
 
@@ -189,6 +190,19 @@ facc help [command]
 ```
 Help provides help for any command in the application.
 Simply type facc help [path to command] for full details.
+```
+# ... version
+`facc version`
+
+## Usage
+> Print the version number of Hugo
+
+facc version
+
+## Description
+
+```
+All software has versions. This is Hugo's
 ```
 
 
