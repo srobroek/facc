@@ -4,17 +4,22 @@ import (
 	"os"
 	"os/signal"
 
+	_ "embed"
+
 	"github.com/pterm/pcli"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 )
 
-var (
-	//Variables are all set by goReleaser
-	version string
-	commit  string
-	date    string
-)
+// var (
+// 	//Variables are all set by goReleaser
+// 	version string
+// 	commit  string
+// 	date    string
+// )
+
+//go:embed version.txt
+var version string
 
 var rootCmd = &cobra.Command{
 	Use:   "facc",
@@ -41,20 +46,20 @@ func Execute() {
 	go func() {
 		<-c
 		pterm.Warning.Println("user interrupt")
-		pcli.CheckForUpdates()
-		os.Exit(0)
+		_ = pcli.CheckForUpdates()
 	}()
 
 	// Execute cobra
 	if err := rootCmd.Execute(); err != nil {
-		pcli.CheckForUpdates()
+		_ = pcli.CheckForUpdates()
 		os.Exit(1)
 	}
+	print(version)
 
-	pcli.CheckForUpdates()
+	_ = pcli.CheckForUpdates()
 }
 
-func init() {
+func Initialise() {
 	// Adds global flags for PTerm settings.
 	// Fill the empty strings with the shorthand variant (if you like to have one).
 	rootCmd.PersistentFlags().BoolVarP(&pterm.PrintDebugMessages, "debug", "", false, "enable debug messages")
@@ -63,7 +68,7 @@ func init() {
 	rootCmd.AddCommand(versionCmd)
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
-	pcli.SetRepo("srobroek/facc")
+	_ = pcli.SetRepo("srobroek/facc")
 	pcli.SetRootCmd(rootCmd)
 	pcli.Setup()
 

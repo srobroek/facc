@@ -3,5 +3,6 @@ package main
 import "github.com/srobroek/facc/cmd"
 
 func main() {
+	cmd.Initialise()
 	cmd.Execute()
 }
