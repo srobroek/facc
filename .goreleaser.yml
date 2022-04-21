@@ -21,7 +21,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=pterm
+      - -s -w -X cmd.version={{.Version}} -X cmd.commit={{.Commit}} -X cmd.date={{ .CommitDate }} -X cmd.builtBy=goReleaser
 checksum:
   name_template: '{{ .ProjectName }}_checksums.txt'
 changelog:
