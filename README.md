@@ -1,5 +1,5 @@
-<h1 align="center">facc</h1>
-<p align="center">Facc your firewall</p>
+<h1 align="center">cli-template</h1>
+<p align="center">This cli template shows the date and time in the terminal</p>
 
 <p align="center">
 
@@ -49,7 +49,8 @@
 
 ----
 
-
+This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
+This template prints the date or time to the terminal.
 
 ## Installation
 

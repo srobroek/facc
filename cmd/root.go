@@ -11,7 +11,9 @@ import (
 
 var (
 	//Variables are all set by goReleaser
-	Version string
+	version string
+	commit  string
+	date    string
 )
 
 var rootCmd = &cobra.Command{
@@ -21,7 +23,7 @@ var rootCmd = &cobra.Command{
 	Example: `facc 
 facc
 `,
-	Version: Version, // <---VERSION---> Updating this version, will also create a new GitHub release.
+	Version: version, // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
 	// 	// Your code here
