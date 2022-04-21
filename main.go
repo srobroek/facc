@@ -1,7 +1,7 @@
 package main
 
-import "github.com/srobroek/facc/cmd"
+import "github.com/srobroek/fac/cmd/facc"
 
 func main() {
-	cmd.Execute()
+	facc.Execute()
 }
