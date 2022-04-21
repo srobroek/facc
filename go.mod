@@ -1,4 +1,4 @@
-module github.com/pterm/cli-template
+module github.com/srobroek/facc
 
 go 1.16
 
