@@ -1,6 +1,6 @@
 module github.com/srobroek/facc
 
-go 1.17
+go 1.18
 
 require (
 	github.com/pterm/pcli v0.4.6
