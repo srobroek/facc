@@ -1,8 +1,15 @@
 package main
 
-import "github.com/srobroek/facc/cmd"
+import (
+	"fmt"
+
+	"github.com/srobroek/facc/cmd"
+)
+
+var version string
 
 func main() {
 	cmd.Initialise()
 	cmd.Execute()
+	fmt.Println(version)
 }

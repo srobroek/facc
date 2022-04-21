@@ -18,9 +18,6 @@ import (
 // 	date    string
 // )
 
-//go:embed version.txt
-var version string
-
 var rootCmd = &cobra.Command{
 	Use:   "facc",
 	Short: "Facc your firewall",
@@ -28,7 +25,7 @@ var rootCmd = &cobra.Command{
 	Example: `facc 
 facc
 `,
-	Version: "v0.0.9", // <---VERSION---> Updating this version, will also create a new GitHub release.
+	Version: bla, // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
 	// 	// Your code here
@@ -54,7 +51,7 @@ func Execute() {
 		_ = pcli.CheckForUpdates()
 		os.Exit(1)
 	}
-	print(version)
+	print(bla)
 
 	_ = pcli.CheckForUpdates()
 }
