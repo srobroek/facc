@@ -1,0 +1,114 @@
+{
+  "backends": [
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdfa"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdfaa"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdfaadsf"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "HELLO"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "bla"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blabl"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdf"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdfasdf"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blablasdfasdfsdf"
+    },
+    {
+      "BackendType": "nsx",
+      "Configuration": {
+        "Global": false,
+        "Insecure": false,
+        "Manager": "1.2.3.4",
+        "Username": "",
+        "Version": ""
+      },
+      "Name": "blabla"
+    }
+  ]
+}

@@ -1,22 +1,36 @@
 package cmd
 
 import (
-	"fmt"
-
+	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 )
 
+// These are filled by the linker
 var (
-	bla    string
-	commit = "n/a"
-	date   = "n/a"
+	version string
+	commit  string
+	date    string
 )
 
-var versionCmd = &cobra.Command{
-	Use:   "version",
-	Short: "Print the version number of Hugo",
-	Long:  `All software has versions. This is Hugo's`,
-	Run: func(cmd *cobra.Command, args []string) {
-		_ = fmt.Sprintf("%s-%s (%s)", bla, commit, date)
-	},
+// var (
+// 	//Variables are all set by goReleaser
+// 	version string
+// 	commit  string
+// 	date    string
+// )
+
+func InitialiseVersionCmd() *cobra.Command {
+
+	var cmd = &cobra.Command{
+		Use:   "version",
+		Short: "Shows more detailed version information",
+		Run: func(cmd *cobra.Command, args []string) {
+			pterm.DefaultBigText.WithLetters(pterm.NewLettersFromString("FACC")).Render()
+			pterm.Printf("Version: %s\n", version)
+			pterm.Printf("Commit: %s\n", commit)
+			pterm.Printf("Build Date: %s\n", date)
+		},
+	}
+
+	return cmd
 }

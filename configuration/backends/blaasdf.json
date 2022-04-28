@@ -1,0 +1,13 @@
+{
+  "global": false,
+  "insecure": false,
+  "manager": "1",
+  "name": "blaasdf",
+  "overwrite": true,
+  "test": {
+    "bla": {
+      "yoho": "value"
+    }
+  },
+  "username": "admin"
+}

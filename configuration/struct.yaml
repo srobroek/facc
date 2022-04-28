@@ -1,0 +1,7 @@
+test: |
+  manager: ""
+  username: admin
+  insecure: false
+  global: false
+  version: ""
+  backendtype: nsxt
