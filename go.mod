@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.41
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.7.0
 	github.com/tidwall/gjson v1.9.3
 	golang.org/x/exp v0.0.0-20220414153411-bcd21879b8fd
@@ -17,7 +17,7 @@ require (
 	github.com/gookit/color v1.5.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/itzg/go-flagsfiller v1.9.1 // indirect
 	github.com/magiconair/properties v1.8.1 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
