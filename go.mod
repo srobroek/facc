@@ -1,6 +1,6 @@
 module github.com/srobroek/facc
 
-go 1.18
+go 1.26.0
 
 require (
 	github.com/pterm/pcli v0.4.6
@@ -8,7 +8,7 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.7.0
 	github.com/tidwall/gjson v1.9.3
-	golang.org/x/exp v0.0.0-20220414153411-bcd21879b8fd
+	golang.org/x/exp v0.0.0-20260824195058-e88cd73687aa
 )
 
 require (
